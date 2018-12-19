@@ -1,2 +1,2 @@
 # ConstraintsManager
-Simplify auto layout constraints management.
+Auto layout constraints manager.
