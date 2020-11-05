@@ -10,8 +10,8 @@ import UIKit
 
 class ExampleVC: UIViewController {
 
-    var cm1: ConstraintsManager!
-    var cm2: ConstraintsManager!
+    var cm1 = ConstraintsManager()
+    var cm2 = ConstraintsManager()
     
     let v1 = UIView()
     let v2 = UIView()
@@ -27,8 +27,10 @@ class ExampleVC: UIViewController {
         v2.backgroundColor = .green
         v3.backgroundColor = .blue
         
-        v1.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(activateCm1)))
-        v2.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(activateCm2)))
+        navigationItem.rightBarButtonItems = [
+            UIBarButtonItem(title: "cm2", style: .plain, target: self, action: #selector(activateCm2)),
+            UIBarButtonItem(title: "cm1", style: .plain, target: self, action: #selector(activateCm1))
+        ]
         
         setupViews()
     }
@@ -62,7 +64,7 @@ private extension ExampleVC {
         cm2 += "V:|-200-[v1]-20-[v2(v1)]-20-[v3(v1)]-100-|"
         cm2.activate()
         
-        cm1 = ConstraintsManager(metrics: metrics, views: views)
+        cm1 = ConstraintsManager(views: views, metrics: metrics)
         cm1.add("H:|-margin-[v1(size)]")
         cm1 += "H:|-margin-[v2]-margin-|"
         cm1 += "V:[v1(size)]-margin-[v2(size)]"
@@ -70,7 +72,7 @@ private extension ExampleVC {
         cm1.add(item: v3, attribute: .centerX, relatedBy: .equal, toItem: view, attribute: .centerX, multiplier: 1.0, constant: 0.0)
         cm1 += v3.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 1.0/2.0)
         cm1 += NSLayoutConstraint(item: v3, attribute: .top, relatedBy: .equal, toItem: v2, attribute: .bottom, multiplier: 1.0, constant: margin)
-        cm1.add("V:[view(size)]", options: [], toMetrics: ["size": 200], toViews: ["view": v3])
+        cm1.add("V:[view(size)]", options: [], metrics: ["size": 200], views: ["view": v3])
     }
 }
 
