@@ -14,7 +14,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DAEE0C3F21CAA761001A6532 /* ConstraintsManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConstraintsManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAEE0C3F21CAA761001A6532 /* ConstraintsManagerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConstraintsManagerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAEE0C4221CAA761001A6532 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAEE0C4C21CAA763001A6532 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAEE0C4E21CAA763001A6532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -36,7 +36,7 @@
 		DAEE0C3621CAA761001A6532 = {
 			isa = PBXGroup;
 			children = (
-				DAEE0C4121CAA761001A6532 /* ConstraintsManager */,
+				DAEE0C4121CAA761001A6532 /* ConstraintsManagerApp */,
 				DAEE0C4021CAA761001A6532 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,12 +44,12 @@
 		DAEE0C4021CAA761001A6532 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DAEE0C3F21CAA761001A6532 /* ConstraintsManager.app */,
+				DAEE0C3F21CAA761001A6532 /* ConstraintsManagerApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DAEE0C4121CAA761001A6532 /* ConstraintsManager */ = {
+		DAEE0C4121CAA761001A6532 /* ConstraintsManagerApp */ = {
 			isa = PBXGroup;
 			children = (
 				DAEE0C5921CAD49E001A6532 /* ConstraintsManager.swift */,
@@ -58,15 +58,15 @@
 				DAEE0C4B21CAA763001A6532 /* LaunchScreen.storyboard */,
 				DAEE0C4E21CAA763001A6532 /* Info.plist */,
 			);
-			path = ConstraintsManager;
+			path = ConstraintsManagerApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DAEE0C3E21CAA761001A6532 /* ConstraintsManager */ = {
+		DAEE0C3E21CAA761001A6532 /* ConstraintsManagerApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DAEE0C5121CAA763001A6532 /* Build configuration list for PBXNativeTarget "ConstraintsManager" */;
+			buildConfigurationList = DAEE0C5121CAA763001A6532 /* Build configuration list for PBXNativeTarget "ConstraintsManagerApp" */;
 			buildPhases = (
 				DAEE0C3B21CAA761001A6532 /* Sources */,
 				DAEE0C3C21CAA761001A6532 /* Frameworks */,
@@ -76,9 +76,9 @@
 			);
 			dependencies = (
 			);
-			name = ConstraintsManager;
+			name = ConstraintsManagerApp;
 			productName = ConstraintsManager;
-			productReference = DAEE0C3F21CAA761001A6532 /* ConstraintsManager.app */;
+			productReference = DAEE0C3F21CAA761001A6532 /* ConstraintsManagerApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -109,7 +109,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DAEE0C3E21CAA761001A6532 /* ConstraintsManager */,
+				DAEE0C3E21CAA761001A6532 /* ConstraintsManagerApp */,
 			);
 		};
 /* End PBXProject section */
@@ -271,13 +271,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0.0;
 				DEVELOPMENT_TEAM = 824MWU2G6J;
-				INFOPLIST_FILE = ConstraintsManager/Info.plist;
+				INFOPLIST_FILE = ConstraintsManagerApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.besarb.ConstraintsManager;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.besarb.ConstraintsManagerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -289,13 +291,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0.0;
 				DEVELOPMENT_TEAM = 824MWU2G6J;
-				INFOPLIST_FILE = ConstraintsManager/Info.plist;
+				INFOPLIST_FILE = ConstraintsManagerApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.besarb.ConstraintsManager;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.besarb.ConstraintsManagerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -314,7 +318,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DAEE0C5121CAA763001A6532 /* Build configuration list for PBXNativeTarget "ConstraintsManager" */ = {
+		DAEE0C5121CAA763001A6532 /* Build configuration list for PBXNativeTarget "ConstraintsManagerApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DAEE0C5221CAA763001A6532 /* Debug */,
