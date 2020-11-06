@@ -40,7 +40,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.license      = "GNU"
-  spec.license      = { :type => "GNU", :file => "../LICENSE" }
+  spec.license      = { :type => "GNU", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -95,7 +95,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "ConstraintsManager/**/*.{h,m,swift}"
+  spec.source_files  = "ConstraintsManager/ConstraintsManager/**/*.{h,m,swift}"
   #spec.exclude_files = "Classes/Exclude"
 
   spec.public_header_files = "ConstraintsManager/**/*.h"
