@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D0F0F8ED2555503000355E70 /* ConstraintsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D0F0F8EB2555503000355E70 /* ConstraintsManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0F0F8F02555503000355E70 /* ConstraintsManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0F0F8E92555503000355E70 /* ConstraintsManager.framework */; };
 		D0F0F8F12555503000355E70 /* ConstraintsManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D0F0F8E92555503000355E70 /* ConstraintsManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D0F0F8F82555505200355E70 /* ConstraintsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEE0C5921CAD49E001A6532 /* ConstraintsManager.swift */; };
@@ -42,7 +41,6 @@
 
 /* Begin PBXFileReference section */
 		D0F0F8E92555503000355E70 /* ConstraintsManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ConstraintsManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0F0F8EB2555503000355E70 /* ConstraintsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConstraintsManager.h; sourceTree = "<group>"; };
 		D0F0F8EC2555503000355E70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAEE0C3F21CAA761001A6532 /* ConstraintsManagerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConstraintsManagerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAEE0C4221CAA761001A6532 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,7 +72,6 @@
 		D0F0F8EA2555503000355E70 /* ConstraintsManager */ = {
 			isa = PBXGroup;
 			children = (
-				D0F0F8EB2555503000355E70 /* ConstraintsManager.h */,
 				DAEE0C5921CAD49E001A6532 /* ConstraintsManager.swift */,
 				D0F0F8EC2555503000355E70 /* Info.plist */,
 			);
@@ -117,7 +114,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0F0F8ED2555503000355E70 /* ConstraintsManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
