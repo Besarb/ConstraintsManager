@@ -40,7 +40,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.license      = "GNU"
-  spec.license      = { :type => "GNU", :file => "LICENSE" }
+  spec.license      = { :type => "GNU", :file => "../LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
