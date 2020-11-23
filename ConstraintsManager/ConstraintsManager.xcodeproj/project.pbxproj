@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		D0F0F8F02555503000355E70 /* ConstraintsManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0F0F8E92555503000355E70 /* ConstraintsManager.framework */; };
 		D0F0F8F12555503000355E70 /* ConstraintsManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D0F0F8E92555503000355E70 /* ConstraintsManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D0F0F8F82555505200355E70 /* ConstraintsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEE0C5921CAD49E001A6532 /* ConstraintsManager.swift */; };
+		DA569F79256C215B00B09DCC /* ConstraintsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA569F78256C215B00B09DCC /* ConstraintsManager.swift */; };
 		DAEE0C4321CAA761001A6532 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEE0C4221CAA761001A6532 /* AppDelegate.swift */; };
 		DAEE0C4D21CAA763001A6532 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAEE0C4B21CAA763001A6532 /* LaunchScreen.storyboard */; };
 		DAEE0C5821CAD469001A6532 /* ExampleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEE0C5721CAD469001A6532 /* ExampleVC.swift */; };
@@ -42,12 +42,12 @@
 /* Begin PBXFileReference section */
 		D0F0F8E92555503000355E70 /* ConstraintsManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ConstraintsManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0F0F8EC2555503000355E70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA569F78256C215B00B09DCC /* ConstraintsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConstraintsManager.swift; path = ../../Sources/ConstraintsManager/ConstraintsManager.swift; sourceTree = "<group>"; };
 		DAEE0C3F21CAA761001A6532 /* ConstraintsManagerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConstraintsManagerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAEE0C4221CAA761001A6532 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAEE0C4C21CAA763001A6532 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAEE0C4E21CAA763001A6532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAEE0C5721CAD469001A6532 /* ExampleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleVC.swift; sourceTree = "<group>"; };
-		DAEE0C5921CAD49E001A6532 /* ConstraintsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +72,7 @@
 		D0F0F8EA2555503000355E70 /* ConstraintsManager */ = {
 			isa = PBXGroup;
 			children = (
-				DAEE0C5921CAD49E001A6532 /* ConstraintsManager.swift */,
+				DA569F78256C215B00B09DCC /* ConstraintsManager.swift */,
 				D0F0F8EC2555503000355E70 /* Info.plist */,
 			);
 			path = ConstraintsManager;
@@ -169,6 +169,7 @@
 				TargetAttributes = {
 					D0F0F8E82555503000355E70 = {
 						CreatedOnToolsVersion = 12.1;
+						LastSwiftMigration = 1220;
 					};
 					DAEE0C3E21CAA761001A6532 = {
 						CreatedOnToolsVersion = 10.1;
@@ -217,7 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0F0F8F82555505200355E70 /* ConstraintsManager.swift in Sources */,
+				DA569F79256C215B00B09DCC /* ConstraintsManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +256,7 @@
 		D0F0F8F32555503000355E70 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0.0.1;
@@ -275,6 +277,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.besarb.ConstraintsManager;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -285,6 +288,7 @@
 		D0F0F8F42555503000355E70 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0.0.1;
